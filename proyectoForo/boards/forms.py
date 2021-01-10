@@ -2,6 +2,9 @@ from django import forms
 from .models import Topic
 
 class NewTopicForm(forms.ModelForm):
+    subject = forms.CharField(widget=forms.TextInput(
+            attrs={'placeholder': 'Tittle in here bro!'}
+        ))
     message = forms.CharField(
         widget=forms.Textarea(
             attrs={'rows': 5, 'placeholder': 'Write some stuff here!!!...'}
