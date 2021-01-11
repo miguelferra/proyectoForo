@@ -1,0 +1,17 @@
+body {
+  background-image: url(../img/crossline-dots.png);
+}
+
+.logo {
+  font-family: 'Potta', cursive;
+
+}
+
+.logo a {
+  color: #37474f;
+}
+
+.logo a:hover,
+.logo a:active {
+  text-decoration: none;
+}
